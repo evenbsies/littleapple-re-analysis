@@ -1,0 +1,109 @@
+=== /DexClassLoader/ (1) ===
+  Ldalvik/system/DexClassLoader;
+=== /loadClass/ (1) ===
+  loadClass
+=== /PathClassLoader/ (0) ===
+=== /^jar$/ (0) ===
+=== /\.jar$/ (0) ===
+=== /jars\// (0) ===
+=== /cache.*jar|jar.*cache/ (0) ===
+=== /playerContent|playContent|detailContent|homeContent|categoryContent/ (4) ===
+  categoryContent
+  detailContent
+  homeContent
+  playerContent
+=== /playUrl|playFrom|playFlag|jx|parse&|parse=1|嗅探|sniff/ (40) ===
+   TBjXn
+  T@jXn
+  TAjXn
+  jXn 7
+  Yvjx)
+  YvJx(
+  RPCXY@CXRPDXY@DXRPEXY@EXRPFXY@FXRPGXY@GXRPHXY@HXRPIXY@IXRPJXY@JXT@KXTQKX!
+  [Y@JX
+  T0jXT1ba8
+  T`baTajX
+  TbjX8
+  [1baT0jX[1jX8
+  RRJxR
+  T2$xRFJxT
+  R&JxR7
+  Jx--KP
+  x-- y--#x--%y--(x--+y--.x--:y-->x--Cy--Fx--Iy--Jx--Ny--Px--Qy--Wx--Xy--fx--{y--
+  x--)y--*x--:y--<x--Ey--Fx--Iy--Jx--Ny--Ux--Wy--Xx--[y--]x--^y--`x--dy--fx--py--wx--
+  x--)y--*x--4y--5x--:y--<x--Ey--Fx--Iy--Jx--Ny--Ux--Wy--]x--_y--`x--dy--fx--py--qx--ty--
+  x--Ey--Fx--Iy--Jx--Py--Tx--dy--fx--
+  x--2y--3x--<y--=x-->y--@x--Gy--Jx--Ky--Ox--Uy--Vx--Wy--Xx--`y--fx--py--rx--uy--
+  jXx--\
+  njx--my--qx--s
+  x--Iy--Jx--Ny--Px--Wy--Xx--Yy--Zx--^y--`x--
+  |?x--G|??H|?!I|!?Jx--W
+  QAx--Ezd-G@AbH@A_Jx--P
+  jx--kP
+  Jx--Ky--PP
+  `x--iBQ\jx--ly--pB/P
+  x--7y--:x--;y--<x-->y--?x--Hy--Px--Zy--`x--fy--gx--iy--jx--
+  ;wB|jxC7myB{
+  /parse?jxs=
+  7Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
+  GRTP packets are transmitted in a packet stream do not support sniffing.
+  jxFrom
+  nosniff
+  onPlayFromMediaId
+  onPlayFromSearch
+  onPlayFromUri
+  playUrl
+=== /127\.0\.0\.1/ (5) ===
+  127.0.0.1
+  http://127.0.0.1:
+  Yhttp://127.0.0.1:%s/stream/live?uuid=%s&server=%s&group=5850&mac=00:00:00:00:00:00&dir=%s
+  'http://127.0.0.1:6677/stream/open?uuid=
+  http://127.0.0.1:7777
+=== /stream\/open/ (1) ===
+  'http://127.0.0.1:6677/stream/open?uuid=
+=== /proxy\?do=|do=py|do=cat|do=live|do=play/ (0) ===
+=== /fconline|jiaohao|/ (78) ===
+     tt
+   4 Gv
+   _ 6w
+    4 Gv
+  ! 4 Gv
+  2 _ 6w
+  3 4 Gv
+  5 4 Gv
+  8 4 Gv
+  I H 7
+  O Q 0
+  P Q 0
+  R M kj
+  Y t u
+  ` ` Z
+  ` ` MU
+  a z 9j
+  c d 0
+  e M kj
+  i k J
+  j l _
+  j \ |
+  j k J
+  { ~ ~
+  | } J
+  | ~ ~
+  #! !?i
+  %! !?i
+  %!"!F
+  (!,!?i
+  *!,!k
+  +!,!k
+  8!:!F
+  :!9!H
+  B!S!I
+  D!z!k
+  J!S!F
+  Q!S!k
+  T![!F
+  T!L!I
+=== /^parse$/ (1) ===
+  parse
+=== /webParse|web_parse/ (0) ===
+=== /playerUrl|player_parse|PlayParse/ (0) ===

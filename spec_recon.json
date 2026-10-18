@@ -1,0 +1,5 @@
+[
+  {"tool": "get_app_info", "args": {}},
+  {"tool": "list_classes", "args": {"prefix": "com.fongmi.android.tv.auth", "limit": 60}},
+  {"tool": "list_classes", "args": {"prefix": "com.LittleAppleTVBox", "limit": 60}}
+]

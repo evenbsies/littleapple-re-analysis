@@ -1,0 +1,39 @@
+=== /python/ (0) ===
+=== /Py[A-Z]/ (0) ===
+=== /_Py|_pyt/ (0) ===
+=== /QuickJS|quickjs|qjs/ (0) ===
+=== /Java_com_/ (29) ===
+  Java_com_p2p_P2PClass_doxsave
+  Java_com_p2p_P2PClass_doxstart
+  Java_com_p2p_P2PClass_doxadd
+  Java_com_p2p_P2PClass_dosetupload
+  Java_com_p2p_P2PClass_doxdownload
+  Java_com_p2p_P2PClass_doxpause
+  Java_com_p2p_P2PClass_doxdel
+  Java_com_p2p_P2PClass_doxdelall
+  Java_com_p2p_P2PClass_doxcheck
+  Java_com_p2p_P2PClass_doxterminate
+  Java_com_p2p_P2PClass_doxstarthttpd
+  Java_com_p2p_P2PClass_doxendhttpd
+  Java_com_p2p_P2PClass_doxsetduration
+  Java_com_p2p_P2PClass_getspeed
+  Java_com_p2p_P2PClass_getdownsize
+  Java_com_p2p_P2PClass_getfilesize
+  Java_com_p2p_P2PClass_getpercent
+  Java_com_p2p_P2PClass_getlocalfilesize
+  Java_com_p2p_P2PClass_doxShare
+  Java_com_p2p_P2PClass_doxGetShare
+  Java_com_p2p_P2PClass_doxgettaskstat
+  Java_com_p2p_P2PClass_doxsetloglevel
+  Java_com_p2p_P2PClass_doxgethostbynamehook
+  Java_com_p2p_P2PClass_doxgetVersion
+  Java_com_p2p_P2PClass_XGFilmOpenFile
+  Java_com_p2p_P2PClass_XGFilmCloseFile
+  Java_com_p2p_P2PClass_XGFilmReadFile
+  Java_com_p2p_P2PClass_doxSetP2PPauseUpdate
+  Java_com_p2p_P2PClass_doxgetlocalAddress
+=== /JNI_OnLoad/ (0) ===
+=== /micro|chakki|dukpy|jython/ (0) ===
+=== /\.py/ (0) ===
+=== /spider/ (0) ===
+=== /libpython|python3|embedded/ (0) ===

@@ -1,0 +1,110 @@
+### load_apk
+{"state":"LOADED","apk_path":"D://immodel//uncensored//DeepSeek-R1//LittleAppleTVBox-TV-2.0.3-universal.apk","class_count":6417,"raw_class_count":6417,"resource_count":1493,"load_duration_ms":3168,"decompile_timeout_ms":90000,"threads":4,"code_cache_size":64,"resources":"full"}
+### get_method_by_name
+    public static com.bumptech.glide.manager.u B(String str, String str2, Headers headers, FormBody formBody, boolean z6, long j6) throws IOException {
+        byte[] byteArray;
+        String strB;
+        boolean z7;
+        String strConcat = str2;
+        if (formBody == null) {
+            byteArray = new byte[0];
+        } else {
+            MediaType mediaType = m.f1829a;
+            Buffer buffer = new Buffer();
+            formBody.writeTo(buffer);
+            byteArray = buffer.readByteArray();
+        }
+        byte[] bArr = new byte[12];
+        m.f1830b.nextBytes(bArr);
+        try {
+            RequestBody requestBodyCreate = RequestBody.create(m.f1829a, ("enc=1&alg=AES-256-GCM&kid=" + NativeAuth.keyVersion() + "&iv=" + Base64.encodeToString(bArr, 11) + "&data=" + Base64.encodeToString(m.a(byteArray, bArr, 1), 11)).getBytes(StandardCharsets.UTF_8));
+            Headers headersBuild = (headers == null ? new Headers.Builder() : headers.newBuilder()).set("X-HSJ-Encrypted", "1").build();
+            long jNanoTime = j6 - System.nanoTime();
+            if (jNanoTime <= 0) {
+                throw new IOException("认证请求超时");
+            }
+            String strL = e3.l.l(str, str2);
+            SecureRandom secureRandom = B.f1659a;
+            String strValueOf = String.valueOf(System.currentTimeMillis() / 1000);
+            byte[] bArr2 = new byte[16];
+            B.f1659a.nextBytes(bArr2);
+            String strA = B.a(bArr2);
+            if (requestBodyCreate == null) {
+                strB = B.b(new byte[0]);
+            } else {
+                try {
+                    Buffer buffer2 = new Buffer();
+                    requestBodyCreate.writeTo(buffer2);
+                    strB = B.b(buffer2.readByteArray());
+                } catch (Exception unused) {
+                    strB = B.b(new byte[0]);
+                }
+            }
+            String upperCase = "POST".toUpperCase(Locale.US);
+            boolean zIsEmpty = str2.isEmpty();
+            String str3 = ServiceReference.DELIMITER;
+            if (!zIsEmpty) {
+                if (strConcat.charAt(0) != '/') {
+                    strConcat = ServiceReference.DELIMITER.concat(strConcat);
+                }
+                str3 = strConcat;
+            }
+            Headers headersBuild2 = (headersBuild == null ? new Headers.Builder() : headersBuild.newBuilder()).set("X-HSJ-Key-Version", NativeAuth.keyVersion()).set("X-HSJ-Timestamp", strValueOf).set("X-HSJ-Nonce", strA).set("X-HSJ-Body-SHA256", strB).set("X-HSJ-Signature", NativeAuth.signRequest(upperCase, str3, strValueOf, strA, strB)).build();
+            OkHttpClient okHttpClient = o.f1836a;
+            Request.Builder builderPost = new Request.Builder().url(strL).post(requestBodyCreate);
+            if (headersBuild2 != null) {
+                builderPost.headers(headersBuild2);
+            }
+            Call callNewCall = o.f1836a.newCall(builderPost.build());
+            callNewCall.timeout().timeout(jNanoTime, TimeUnit.NANOSECONDS);
+            Response responseExecute = callNewCall.execute();
+            try {
+                String strY = responseExecute.body() == null ? "" : S.Y(responseExecute.body().source(), IRecordHandler.SUB_LEN);
+                boolean zL = L(strY, responseExecute.headers());
+                try {
+                    JSONObject jSONObject = new JSONObject(strY);
+                    z7 = jSONObject.optInt("enc") == 1 && "AES-256-GCM".equals(jSONObject.optString("alg")) && !jSONObject.optString("iv").isEmpty() && !jSONObject.optString("data").isEmpty();
+                } catch (JSONException unused2) {
+                }
+                try {
+                    JSONObject jSONObject2 = new JSONObject(m.b(strY));
+                    if (!jSONObject2.has("code")) {
+                        throw new IOException("返回协议缺少 code");
+                    }
+                    int iOptInt = jSONObject2.optInt("code", Integer.MIN_VALUE);
+                    boolean z8 = zL || z7;
+                    if (!responseExecute.isSuccessful()) {
+                        String strOptString = jSONObject2.optString("msg", "HTTP " + responseExecute.code());
+                        if (iOptInt == Integer.MIN_VALUE) {
+                            iOptInt = responseExecute.code();
+                        }
+                        throw new f(strOptString, iOptInt, jSONObject2.optString("error_code"), z8);
+                    }
+                    if (z6 && iOptInt != 0 && iOptInt != 1 && iOptInt != 200) {
+                        throw new f(jSONObject2.optString("msg", "请求失败"), iOptInt, jSONObject2.optString("error_code"), z8);
+                    }
+                    com.bumptech.glide.manager.u uVar = new com.bumptech.glide.manager.u(3, jSONObject2, str, z8);
+                    responseExecute.close();
+                    return uVar;
+                } catch (JSONException e6) {
+                    if (responseExecute.isSuccessful()) {
+                        throw new IOException("返回格式错误", e6);
+                    }
+                    throw new IOException("HTTP " + responseExecute.code(), e6);
+                }
+            } catch (Throwable th) {
+                if (responseExecute == null) {
+                    throw th;
+                }
+                try {
+                    responseExecute.close();
+                    throw th;
+                } catch (Throwable th2) {
+                    th.addSuppressed(th2);
+                    throw th;
+                }
+            }
+        } catch (GeneralSecurityException e7) {
+            throw new IOException("请求加密失败", e7);
+        }
+    }

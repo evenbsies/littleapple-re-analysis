@@ -1,0 +1,36 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": {
+    "list": [
+      {
+        "flag": false,
+        "needLogin": true,
+        "resolution": 1080,
+        "resolutionName": "蓝光",
+        "url": "https://ppvod01.kqgfbs.com/splitOut/20261016/1413457/V20261016192740899531413457/index.m3u8?t=6ad3dd63&whip=13.250.83.109&sign=7ccf87ea2ebd6a60046a95d26192aab5a0cccd37",
+        "newFlag": 1
+      },
+      {
+        "flag": false,
+        "needLogin": true,
+        "resolution": 720,
+        "resolutionName": "高清",
+        "url": "https://ppvod01.kqgfbs.com/splitOut/20261016/1413461/V20261016192741230071413461/index.m3u8?t=6ad3dd63&whip=13.250.83.109&sign=3a46a55e84c0082524aeff6e05271730874294b5",
+        "newFlag": 1
+      },
+      {
+        "flag": true,
+        "needLogin": false,
+        "resolution": 480,
+        "resolutionName": "标清",
+        "url": "https://ppvod01.kqgfbs.com/splitOut/20261016/1413453/V20261016192142763511413453/index.m3u8?t=6ad3dd63&whip=13.250.83.109&sign=10e9680454e0a7b5d50d1a1d9b47fac72018dac5",
+        "newFlag": 1
+      }
+    ],
+    "headStart": 123,
+    "headEnd": 214,
+    "tailStart": 2740,
+    "tailEnd": 0
+  }
+}

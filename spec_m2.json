@@ -1,0 +1,3 @@
+[
+  {"tool": "get_class_source", "args": {"class_name": "G2.m", "max_bytes": 6000}}
+]

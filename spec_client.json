@@ -1,0 +1,4 @@
+[
+  {"tool": "get_class_summary", "args": {"class_name": "com.bumptech.glide.c"}},
+  {"tool": "search_classes_by_keyword", "args": {"search_term": "vlp", "search_in": "code", "count": 25}}
+]

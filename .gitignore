@@ -1,0 +1,38 @@
+# 大型二进制 - 不入库
+device/frida-server
+device/frida-server.xz
+nodejs-v24/
+runtime/
+android/
+LittleApple-extract/
+device/jarx/
+device/parts/
+docs/
+
+# 截图（体积大，非必要）
+device/*.png
+
+# 敏感数据：真实设备令牌与指纹
+device/prefs.xml
+device/play_auth_plain.json
+device/cap*.log
+device/key.log
+device/det.log
+device/oracle.log
+device/sig.log
+device/sha1.log
+device/sha1b.log
+device/probe.log
+
+# jadx 原始输出（超大，含解密材料）
+os-*.txt
+os-*.utf8.txt
+out-*.txt
+out-*.utf8.txt
+bodies-*.txt
+dex-classdefs.txt
+dex-regions*.txt
+
+# 含真实设备令牌的文件
+device/play_auth_plain.json
+device/test_token_key.py

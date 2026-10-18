@@ -1,0 +1,14 @@
+### load_apk
+{"state":"LOADED","apk_path":"D://REA//device//hsj9.jar","class_count":254,"raw_class_count":254,"resource_count":2,"load_duration_ms":489,"decompile_timeout_ms":90000,"threads":4,"code_cache_size":64,"resources":"full"}
+### get_method_by_name
+    private static String m35(String str) throws Exception {
+        try {
+            StringBuilder sb = new StringBuilder(new BigInteger(1, MessageDigest.getInstance(a2.m244("CuHmPRsTUmpmlyAAn+vGPW9DNBnVNlEqfYEFJn/7uw==")).digest((a2.m244("ynG+l51HzQXG43oKEoszPwKICzY4LhQrKpu/rG2IV3EHvD0e9TXihY9IodcQfMp2ehuVfuP/gBrvEpGI50qP+N7K") + str).getBytes(a2.m244("aNEGTVsN5QR9GJtPRYNPVyMohOLr4kEsd9H35HKwJlMR")))).toString(16));
+            while (sb.length() < 32) {
+                sb.insert(0, a2.m244("gUJ80Zabq0hnbFEUIPKU86vJoGd4fVpLFMQLBYY="));
+            }
+            return sb.toString().toLowerCase();
+        } catch (Exception e2) {
+            return "";
+        }
+    }

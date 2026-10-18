@@ -1,0 +1,29 @@
+dex magic candidates: 0 []
+
+"AccessDecision" x1 at offsets: [ 6600116 ]
+  ctx[6600116]: r subclass?. No encoder available for format ..No entity found in response.BNo enum constant com.fongmi.android.tv.auth.AccessDecision.Reason..MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState..INo enum constant com.fongmi.android.tv.auth.MembershipOrd
+
+"MembershipOrder" x2 at offsets: [ 6600184, 6600263 ]
+  ctx[6600184]: sponse.BNo enum constant com.fongmi.android.tv.auth.AccessDecision.Reason..MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState..INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState..QNo enum constant com.github.kiulian.downloader.mod
+  ctx[6600263]: enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState..INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState..QNo enum constant com.github.kiulian.downloader.model.videos.quality.AudioQuality..QNo enum constant com.github.kiulian.downloader
+
+"membership_order_create" x1 at offsets: [ 6119525 ]
+  ctx[6119525]: on../lib../lib/../localhost/../login../logout../m3u8/../m3u8key/../media../media_entry_token../membership_card_redeem../membership_order_create../membership_order_history../membership_order_status../membership_plans../n.
+/newFolder../obj/.6/okhttp3/internal/publicsuffix/PublicSuf
+
+"qr.alipay.com" x1 at offsets: [ 7011170 ]
+  ctx[7011170]: ..px..px)..px) is less or equal to (0px).5px) is less or equal to minimum auto-size text size (..py..q..q0..q1..qq.com..qr.alipay.com.
+qr_payload..qtp..quadTo..quadrilateralToQuadrilateral..quadrilateralToSquare..quality..qualityLabel..query..query = ?..queryBackground..queryBroa
+
+"haotv.store/vlp" x1 at offsets: [ 6928869 ]
+  ctx[6928869]: sg-id3.<https://github.com/google/gson/blob/main/Troubleshooting.md#.%https://la.haotv.store/api.php/fongmi..https://la.haotv.store/vlp.¸.https://pbaccess.video.qq.com/trpc.universal_backend_service.page_server_rpc.PageServer/GetPageData?video_appid=1000005&vplatform=3&vversion_n
+
+"trial_android_hash" x1 at offsets: [ 7093327 ]
+  ctx[7093327]: gs..treeConnect..treeConnectTable..treeId..treeModel..treeNode..treeWillCollapse..treeWillExpand..trial..trial_allowed..trial_android_hash.
+trick-play..trie..triggerName..triggerType..trim..trimPathEnd..trimPathOffset..trimPathStart..trimStateSet..trimSubstring..trimSubstring$def
+
+"LITTLEAPPLE_AUTH_V1" x1 at offsets: [ 6280752 ]
+  ctx[6280752]: LLLL..LILLLZ..LILLZ..LILLZZ..LILZ..LILZIL..LILZLL..LINE_END..LINK..LINUX..LIST expected, found: ..LISTENER_UNAVAILABLE..LITTLEAPPLE_AUTH_V1=..LITTLE_ENDIAN..LIZ..LIZIILI..LIZLII..LIZLIII..LIZZ..LJ..LJ/a;..LJ/b;..LJ/c;..LJ/d;..LJ/e;..LJ/f;..LJ/g;..LJ/h;..LJ/i;..LJ0/a;..LJ0/b;..LJ0
+
+"X-Device-Token" x1 at offsets: [ 6714063 ]
+  ctx[6714063]: .!Wrong type or invalid value for '..WrongConstant..X..X ..X-AV-CLIENT-INFO..X-CLING-IFACE-MAC..X-Content-Type-Options..X-Device-Token..X-Forwarded-For..X-Forwarded-Host..X-Forwarded-Proto..X-Forwarded-Server..X-Frame-Options..X-HSJ-Body-SHA256..X-HSJ-Encrypted..X-HSJ-Key-Version

@@ -1,0 +1,7 @@
+[
+  {"tool": "get_class_source", "args": {"class_name": "com.fongmi.android.tv.vstc.NativeVstc"}},
+  {"tool": "get_class_summary", "args": {"class_name": "e3.k"}},
+  {"tool": "get_class_summary", "args": {"class_name": "G2.m"}},
+  {"tool": "get_class_summary", "args": {"class_name": "G2.j"}},
+  {"tool": "search_classes_by_keyword", "args": {"search_term": "auth_", "search_in": "code", "count": 30}}
+]

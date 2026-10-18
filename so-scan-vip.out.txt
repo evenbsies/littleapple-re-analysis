@@ -1,0 +1,13 @@
+=== libhsjtv.so ===
+ /NativeAuth/ x10
+   Java_com_fongmi_android_tv_auth_NativeAuth_keyVersion
+   Java_com_fongmi_android_tv_auth_NativeAuth_defaultBaseUrl
+   Java_com_fongmi_android_tv_auth_NativeAuth_domainUrl
+   Java_com_fongmi_android_tv_auth_NativeAuth_brokerBaseUrl
+   Java_com_fongmi_android_tv_auth_NativeAuth_brokerKeyVersion
+   Java_com_fongmi_android_tv_auth_NativeAuth_cryptoKey
+=== libjpa.so ===
+=== libcore.so: MISSING
+=== libmedia3ext.so ===
+=== librtmp.so: MISSING
+=== libffmpeg.so: MISSING

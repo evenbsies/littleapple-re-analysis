@@ -1,0 +1,4 @@
+[
+  {"tool": "get_xrefs_to_method", "args": {"class_name": "com.fongmi.android.tv.auth.NativeAuth", "method_name": "signRequest"}},
+  {"tool": "get_xrefs_to_method", "args": {"class_name": "com.fongmi.android.tv.auth.NativeAuth", "method_name": "verifyResponse"}}
+]

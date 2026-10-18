@@ -1,0 +1,7 @@
+[
+  {"tool": "get_main_activity_class", "args": {}},
+  {"tool": "get_strings", "args": {"filter": "会员", "limit": 25}},
+  {"tool": "get_strings", "args": {"filter": "卡密", "limit": 25}},
+  {"tool": "get_strings", "args": {"filter": "授权", "limit": 25}},
+  {"tool": "get_strings", "args": {"filter": "激活", "limit": 20}}
+]

@@ -1,0 +1,247 @@
+### load_apk
+{"state":"LOADED","apk_path":"D://REA//device//hsj9.jar","class_count":254,"raw_class_count":254,"resource_count":2,"load_duration_ms":505,"decompile_timeout_ms":90000,"threads":4,"code_cache_size":64,"resources":"full"}
+### get_class_source
+package com.github.catvod.spider;
+
+import android.content.Context;
+import android.text.TextUtils;
+import com.github.catvod.crawler.Spider;
+import com.github.catvod.spider.harden.a2;
+import com.github.catvod.spider.merge.entryauth.a4;
+import com.github.catvod.spider.merge.f.b;
+import com.github.catvod.spider.merge.liteapple20260731.a5;
+import java.net.URI;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Locale;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+/* JADX INFO: loaded from: classes.dex */
+public class LiteApple extends Spider {
+    private final b deviceHeaders = new b();
+    private String base = a2.m244("klXzFAqWCdsDAwGdGVVy5xvSQyBIcwljKoxxhdkqIxwT57r0txfng6gXMSp2B+vW");
+    private String media = a2.m244("T8kEOYrHr05J0SDGyc31cS/QjxytPnwsbvgapSmqY/SWPAN4CPPy8x0WBNZR2wexCe33vwvJjS4b7XjFxzijJDG8");
+
+    private static String m52(String str) throws Exception {
+        if (str == null) {
+            str = "";
+        }
+        return URLEncoder.encode(str, a2.m244("aNEGTVsN5QR9GJtPRYNPVyMohOLr4kEsd9H35HKwJlMR"));
+    }
+
+    private static JSONObject m53(String str, String str2, JSONArray jSONArray, boolean z) throws Exception {
+        JSONArray jSONArray2 = new JSONArray();
+        String strM244 = a2.m244("DuQP8mgEp9R725fY3ruBoPGuDfj3y/Ku/1ZTAcQ=");
+        String strM245 = a2.m244("h4mMJVVyVwRvcjp34cCk0ih7uPcATZN5pNrf6D8=");
+        if (z) {
+            jSONArray2.put(new JSONObject().put(strM245, a2.m244("CuRfL6u42/GhVeHKCV7MBMjoZK17eYQw3ssAYIUM6oyYeA==")).put(strM244, ""));
+        }
+        for (int i = 0; i < jSONArray.length(); i++) {
+            String string = jSONArray.getString(i);
+            jSONArray2.put(new JSONObject().put(strM245, string).put(strM244, string));
+        }
+        return new JSONObject().put(a2.m244("eDIqReUSgz/PnbeV91aKsPl/BBOBHsPkxE9bT2q4ew=="), str).put(a2.m244("ETyHh3dwkkf2Hi52hIpi/llgIfAPWsV60/FTaAR3seo="), str2).put(a2.m244("4bIdAvNKd83qm2Eop6+B7F4F3QbGjpPt1hlLN4SaudoV"), jSONArray2);
+    }
+
+    private JSONObject m54(String str) throws Exception {
+        return new JSONObject(a5.m289(this.base + str, new HashMap()));
+    }
+
+    private String m55(String str, String str2, boolean z, HashMap<String, String> map) throws Exception {
+        int iMax = Math.max(1, Integer.parseInt(str2));
+        StringBuilder sbAppend = new StringBuilder(a2.m244("bh5ILkIjgEzmubg0T7sMuzwngv9FZKsagYgEdyGQGdaDDn0AjcaAdY11O1e7nlDe0nioTUge3FFlREgpm21w4+txNMk=")).append(iMax).append(a2.m244("8zfg/mOOfI3gKQzgI4by4DERG/eWbDkxApvWQN1+VBTkyw==")).append(m52(str));
+        if (map != null) {
+            for (String str3 : map.keySet()) {
+                String str4 = map.get(str3);
+                if (str4 != null && !str4.trim().isEmpty()) {
+                    sbAppend.append('&').append(m52(str3)).append('=').append(m52(str4.trim()));
+                }
+            }
+        }
+        JSONArray jSONArrayM63 = m63(m54(sbAppend.toString()).getJSONArray(a2.m244("GYRCAoOkC6dHw3iKtcBq+HynWoepkWkekoNoHTO5jqw=")));
+        JSONObject jSONObjectPut = new JSONObject().put(a2.m244("P8VqVNHCYDK4ygnuMovD4kxPkTvLat1tkTBeOWfbo9Y="), jSONArrayM63).put(a2.m244("nfKTPPebN0LCYC1N2qLKOvTkqvSCojXohNOKcsGdi4A="), iMax);
+        if (jSONArrayM63.length() == 20) {
+            iMax++;
+        }
+        return jSONObjectPut.put(a2.m244("0GIq1mhTUGmni/nj4zggS07NW2+mft5+QPsMzdnyOt9ccNJYSA=="), iMax).put(a2.m244("B37J/0hakFhgSookvXP+4xVVoPMdjiiXjECMaDmb4+nh"), 20).put(a2.m244("LO/tnXlfPKA/rNU03hhp5FcQ7P3JKdR6Qn43d0zdqRvf"), Integer.MAX_VALUE).toString();
+    }
+
+    private String m56(List<String> list) throws Exception {
+        JSONObject jSONObject = new JSONObject(a5.m289(this.base + a2.m244("rLY8BmhZ7fc5RaJNB76zRnxHDO3CQILuZhaZBMVU72KPC9Bgw0s9DXER+uU8/6qF6sH56hxX0GKayMHE/Tg9cLLX") + m52(list.get(0)), this.deviceHeaders.a())).getJSONObject(a2.m244("GYRCAoOkC6dHw3iKtcBq+HynWoepkWkekoNoHTO5jqw="));
+        JSONObject jSONObjectM64 = m64(jSONObject);
+        jSONObjectM64.put(a2.m244("GCP5YEjGxpb6U0U4M4+OdvlLwgXJLPyMtBQaReBk4zCzWueStA=="), jSONObject.optString(a2.m244("r42guxJ9tJV+jHnJDiIH/wr2ymXxgFoYy3heQrNzczTUyPMS2Q==")));
+        jSONObjectM64.put(a2.m244("VtprgjDxU8VL8jWNLdTMUV6LPBKiS3eT7G9HWrL7D4ovKAlZ"), jSONObject.optString(a2.m244("rdhORuJxOznQ3aCtJXLPmydlOGDzKziOgtSN32lcv0o=")));
+        jSONObjectM64.put(a2.m244("FR0OdfYqYKfvXpUAAwC5tmcbarL5538BDYZanf/QZLjIBNIn"), jSONObject.optString(a2.m244("n/tk+ezl9efpFVL5K0331v4wNvOsJvMtAvu3q/atqt8=")));
+        jSONObjectM64.put(a2.m244("MrDqcQAhRsJjOQKZZrL2pdyqzM7p8XVDLZ5QTRXAFMX00pS1Yg=="), jSONObject.optString(a2.m244("nDbKzthleq7MXm7pMf3CN4tQzfS+1LOnduaeak5PHWdb")));
+        jSONObjectM64.put(a2.m244("bVaxsfbkq6ZKefqTPd5V5O67WQ5lctQQ9A4VMzk+KRgnLQMPRUzy"), jSONObject.optString(a2.m244("ZILIJvARAwPLABAiCCHOsR8UbRs4CnmiB82goXY2Lqdw7Es=")).trim());
+        jSONObjectM64.put(a2.m244("CFBgYKAA5R+GTDT+JyYVBzaG6HHxys+sydUQS27r8nNCvDUnaIHRdw=="), jSONObject.optString(a2.m244("KMMozNhB3ZdSaEW3wAVLCLu792fVs6ze/wJpgcvwAiuAcfdX")).trim());
+        ArrayList arrayList = new ArrayList();
+        JSONArray jSONArray = jSONObject.getJSONArray(a2.m244("DfxOuNJh8yqdrp7ygqj38llHOhZO8JkgOpU71G/wMlE="));
+        for (int i = 0; i < jSONArray.length(); i++) {
+            JSONObject jSONObject2 = jSONArray.getJSONObject(i);
+            arrayList.add(jSONObject2.getString(a2.m244("eDIqReUSgz/PnbeV91aKsPl/BBOBHsPkxE9bT2q4ew==")) + a2.m244("UNt95iD1UCaLU0xoJehcsLqSQXjxRdTDZejn9lc=") + jSONObject2.getString(a2.m244("38Bp4V0EPwdyabl5MWGg0Bvc3GnqOZd2Yu9TtbjTqQ==")));
+        }
+        jSONObjectM64.put(a2.m244("OGapkP1RXvItthdRVtwRVr620vUwPWJX8i99sZ/rR3IWO+P/yhcYdqA="), a2.m244("dxAzaXitTsjXgYxPDCAPbXhats8aVyApCNZojfekfO5e+fkSWg==")).put(a2.m244("X84zIlUzIYRrZQGizADZrEQI9ZVZtVUrsnY2ikQvQIWlA+R+lEdhLQ=="), TextUtils.join(a2.m244("+1e+Bqn1EQhXjzNm3ni25E+/Yyjy8R4RsimEIzw="), arrayList));
+        return new JSONObject().put(a2.m244("P8VqVNHCYDK4ygnuMovD4kxPkTvLat1tkTBeOWfbo9Y="), new JSONArray().put(jSONObjectM64)).toString();
+    }
+
+    private String m57(boolean z) throws Exception {
+        String strM244;
+        JSONArray jSONArray = m54(a2.m244("sHFxIyYdtc/KiqCJ3pCLKY7rkwlsGZhw0rUeX2z5tac50dbCy6V1b3cpFXBnXe1rV7U25PZjomQ=")).getJSONArray(a2.m244("GYRCAoOkC6dHw3iKtcBq+HynWoepkWkekoNoHTO5jqw="));
+        JSONArray jSONArray2 = new JSONArray();
+        JSONObject jSONObject = new JSONObject();
+        int i = 0;
+        while (true) {
+            int length = jSONArray.length();
+            strM244 = a2.m244("b92+mMDj93Xv9NdXZDb9z6qv3VqjBZJcNpGW0H28dLtt");
+            if (i >= length) {
+                break;
+            }
+            JSONObject jSONObject2 = jSONArray.getJSONObject(i);
+            String strM245 = a2.m244("wNykjWmDVSbkicwPWrekxxTO5habcYTQau+6ei9QyRtKcig=");
+            String string = jSONObject2.getString(strM245);
+            JSONObject jSONObjectPut = new JSONObject().put(strM245, string);
+            String strM246 = a2.m244("GCP5YEjGxpb6U0U4M4+OdvlLwgXJLPyMtBQaReBk4zCzWueStA==");
+            jSONArray2.put(jSONObjectPut.put(strM246, jSONObject2.getString(strM246)));
+            if (z) {
+                JSONArray jSONArray3 = new JSONArray();
+                jSONArray3.put(m53(strM244, a2.m244("F+igiYFW8LmoiSe+IvuDbAI7RThgJiQWEb8YItrTGL/aQw=="), jSONObject2.getJSONArray(a2.m244("07U8fhOMuayEdQnpjJg7LPDLE2gJgXKI2rhvJrsMkXOs4A8=")), false));
+                jSONArray3.put(m53(a2.m244("n/tk+ezl9efpFVL5K0331v4wNvOsJvMtAvu3q/atqt8="), a2.m244("jqryW44fRR/FIy2/e9LGh1VYe09HCd1goSt2hwzmib6QbA=="), jSONObject2.getJSONArray(a2.m244("WT3JCZ7o/rx51Wg198zBxoW1Hk55tyPIAcsTUvHwPokg")), true));
+                jSONArray3.put(m53(a2.m244("rdhORuJxOznQ3aCtJXLPmydlOGDzKziOgtSN32lcv0o="), a2.m244("uXqlA1Dpuz3OhTWle/aMkbcXW14kihdcDRTaFpeBf+GTKg=="), jSONObject2.getJSONArray(a2.m244("HiY8YSRuOQh1CfHJSFFmWNVclY4bDEaTIZZA9wfSU1oK")), true));
+                JSONArray jSONArray4 = new JSONArray();
+                JSONObject jSONObject3 = new JSONObject();
+                String strM247 = a2.m244("uHaZCvzvOtkwfNp8eXrLGQZ6yeH/gYcEIOeoRAI1NsRgvQ==");
+                String strM248 = a2.m244("h4mMJVVyVwRvcjp34cCk0ih7uPcATZN5pNrf6D8=");
+                JSONObject jSONObjectPut2 = jSONObject3.put(strM248, strM247);
+                String strM249 = a2.m244("oshGbK2CJYWvNPpdj2w68aimdgNAiV9yOkIuXG58RnF4b1Gd4RM=");
+                String strM2410 = a2.m244("DuQP8mgEp9R725fY3ruBoPGuDfj3y/Ku/1ZTAcQ=");
+                jSONArray4.put(jSONObjectPut2.put(strM2410, strM249));
+                jSONArray4.put(new JSONObject().put(strM248, a2.m244("G0HcZn0aIr8bnLG8zS0SW9gAaPVuwLTNq+oWz3fw3xlVqw==")).put(strM2410, a2.m244("Br2KAPZFsriN3zp4ppWQE318o0+gZzgGMJPUcAjzJ5Q=")));
+                jSONArray4.put(new JSONObject().put(strM248, a2.m244("T1Pr3CuvXI245vLzR87m+MmQmIxr3Damuo0xHdp4/bBD5Q==")).put(strM2410, a2.m244("UEU9sUGOFAYD1uZL/X6HL1+0C+O1dzcNBdoykbPrxD/f")));
+                jSONArray3.put(new JSONObject().put(a2.m244("eDIqReUSgz/PnbeV91aKsPl/BBOBHsPkxE9bT2q4ew=="), a2.m244("Ug5z5eWWL5ZBvcDKFS8S/ealibbrBhYS+4hZzceolXOxEg==")).put(a2.m244("ETyHh3dwkkf2Hi52hIpi/llgIfAPWsV60/FTaAR3seo="), a2.m244("eMifKueT7xJ2NxEN57VCJtwGppAd/2HOzc0i8gT4T2Ui6g==")).put(a2.m244("4bIdAvNKd83qm2Eop6+B7F4F3QbGjpPt1hlLN4SaudoV"), jSONArray4));
+                jSONObject.put(string, jSONArray3);
+            }
+            i++;
+        }
+        JSONObject jSONObjectPut3 = new JSONObject().put(strM244, jSONArray2);
+        if (z) {
+            jSONObjectPut3.put(a2.m244("2lYpVld9zNIDNgY9D2JP6OxharN/enmunH0jCtTDZ8k/MR4="), jSONObject);
+        }
+        return jSONObjectPut3.toString();
+    }
+
+    private String m58() throws Exception {
+        JSONObject jSONObject = m54(a2.m244("zLl+i71E3x/4AEkVU2dJfs9iDMsmCszMDVhpaTlbRcc9NycFC/tf2TkeRrpYDwkl34OGEkoITDE=")).getJSONObject(a2.m244("GYRCAoOkC6dHw3iKtcBq+HynWoepkWkekoNoHTO5jqw="));
+        String strM244 = a2.m244("P8VqVNHCYDK4ygnuMovD4kxPkTvLat1tkTBeOWfbo9Y=");
+        JSONArray jSONArray = jSONObject.getJSONArray(strM244);
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        for (int i = 0; i < jSONArray.length(); i++) {
+            JSONArray jSONArray2 = jSONArray.getJSONObject(i).getJSONArray(strM244);
+            for (int i2 = 0; i2 < Math.min(4, jSONArray2.length()); i2++) {
+                JSONObject jSONObjectM64 = m64(jSONArray2.getJSONObject(i2));
+                linkedHashMap.put(jSONObjectM64.getString(a2.m244("/wcTxMKjQM4d2ghlLm0q4LcqLpv+XOOAZPV5pF3Z/uqsqQ==")), jSONObjectM64);
+            }
+        }
+        return new JSONObject().put(strM244, new JSONArray(linkedHashMap.values())).toString();
+    }
+
+    private void m59(Context context, String str) throws Exception {
+        super.init(context, str);
+        this.deviceHeaders.a = context;
+        if (str == null || str.trim().isEmpty()) {
+            return;
+        }
+        String strTrim = str.trim();
+        if (strTrim.startsWith(a2.m244("ExQsSommmAlxuedg1OncZmonEnaJBkfn2pSiR9g="))) {
+            JSONObject jSONObject = new JSONObject(strTrim);
+            strTrim = jSONObject.optString(a2.m244("38Bp4V0EPwdyabl5MWGg0Bvc3GnqOZd2Yu9TtbjTqQ=="), jSONObject.optString(a2.m244("71mphV0TiWOMHq7Keyn3OsTgP3jzMY1WvrCgjLIeLnI="), ""));
+        }
+        if (strTrim.isEmpty()) {
+            return;
+        }
+        URI uriCreate = URI.create(strTrim);
+        if ((!a2.m244("KDq47jxKM5pRSSUYuvEYXQVqyIGUcztZBH10jEzXgmdr").equalsIgnoreCase(uriCreate.getScheme()) && !a2.m244("4j2R3YhQWIbb+A5UNT/2goOxTBigJBOMum6RbnYCHMk=").equalsIgnoreCase(uriCreate.getScheme())) || uriCreate.getHost() == null || uriCreate.getRawUserInfo() != null || uriCreate.getRawQuery() != null || uriCreate.getRawFragment() != null) {
+            throw new IllegalArgumentException(a2.m244("xiPKI5dyWgakzKJ8HDDTTh4omsFaxF64L0xMq54Lx/FmYtuu4xUcrlrl6RX/osIWbYmuN+Xy2WxJ2YBeV7uTpKKv6ICL"));
+        }
+        this.base = strTrim.replaceAll(a2.m244("txCoFpnYQ75GTaBWiFZEjZkc+rDdUJ+Km3O2qR3DqA=="), "");
+    }
+
+    private String m60(String str, String str2, List<String> list) throws Exception {
+        JSONObject jSONObject = new JSONObject();
+        String strM244 = a2.m244("MJ3nXwx+Bm1RQL5fvOnQtwj1VRFY+UNHIeFUtdsUCDnB");
+        JSONObject jSONObjectPut = jSONObject.put(strM244, 0).put(a2.m244("UW+xZMFcwsxIAKFYB+/7Kktrm298HcAxZcqAa5K4WibSvQI="), "");
+        if (str2.startsWith(a2.m244("tLGyi3Ja0ICHl+Qb94/0NvkPtFpHoR9zaCp8Op7vQFc="))) {
+            str2 = a2.m244("u4ZS/1qul8GQ1wrvNjrlSfJjw/bL1CxyNBRD8nAnkH96kIGwbqXtagAftZQIf02hoCO0R4bIk/S47JgAH448ZCZF") + str2.substring(4);
+            jSONObjectPut.put(strM244, 1).put(a2.m244("Ud3nQkze6eD3PW3cZ38oYoxUQJQFWP3INjgHUQvQ/HC+IQ=="), new JSONObject().put(a2.m244("E5o0BIuwijG9MXnRr6OvoqE2hi7ifKKUevo0svxcnqXtbWYnaRE="), a2.m244("38w9pCN8KDJ9lgYMQE0pReEsklmz1bdVpaK+kpC9vqEDbsQo7G3dQfT5julrqdmZYnNX4JaqmvDa/uNgIR8+iV/olDwE2Xne66JfoNyfEWGgA1zEZ+h8s/Hof83+J3fefe7kNZQNnqxvH4jyumC6Gab9EYHDvHl4ZKLSK4PkaJpXaBcEIOzkIW/mgQ==")).toString());
+        }
+        String lowerCase = str2.toLowerCase(Locale.ROOT);
+        if (!lowerCase.startsWith(a2.m244("kMOmFGBg+jMX1nYIdtmbl63OiVbTQZfpqrnJsTSq+F58gt4=")) && !lowerCase.startsWith(a2.m244("JJxMhXOH/FfZUP+80KKNuU0sJU+IEcVq1pp4L9+nFnOVeCBH"))) {
+            str2 = this.media + str2 + a2.m244("qgXinihUa70TBlDlWKbZ+DUaspGWEH/px1b5A4EZoDmJ");
+        }
+        return jSONObjectPut.put(a2.m244("38Bp4V0EPwdyabl5MWGg0Bvc3GnqOZd2Yu9TtbjTqQ=="), str2).toString();
+    }
+
+    private String m61(String str, boolean z) throws Exception {
+        return searchContent(str, z, a2.m244("IFYw8xT2bi3VC5aA+/fX8xGI9Cx/r81JCOSyH2c="));
+    }
+
+    private String m62(String str, boolean z, String str2) throws Exception {
+        return new JSONObject().put(a2.m244("P8VqVNHCYDK4ygnuMovD4kxPkTvLat1tkTBeOWfbo9Y="), m63(m54(a2.m244("4KRGi7cWPmi/ByJQ6u6KgtHMY+t21Jjs5Gy99s7smnN+IdmgL1NAEGg5xAU+45ZET4jikr/Go3Zl5ZnxWh95jDO8Mkc=") + Math.max(1, Integer.parseInt(str2)) + a2.m244("etuzvdCnNIo8zPgrMxJAheV+vmyJZ4JzIucZGYMFEpY=") + m52(str)).getJSONArray(a2.m244("GYRCAoOkC6dHw3iKtcBq+HynWoepkWkekoNoHTO5jqw=")))).toString();
+    }
+
+    private static JSONArray m63(JSONArray jSONArray) throws Exception {
+        JSONArray jSONArray2 = new JSONArray();
+        for (int i = 0; i < jSONArray.length(); i++) {
+            jSONArray2.put(m64(jSONArray.getJSONObject(i)));
+        }
+        return jSONArray2;
+    }
+
+    private static JSONObject m64(JSONObject jSONObject) throws Exception {
+        return new JSONObject().put(a2.m244("/wcTxMKjQM4d2ghlLm0q4LcqLpv+XOOAZPV5pF3Z/uqsqQ=="), jSONObject.getString(a2.m244("2qca99yVqdXluu6Aj2JePpXJJqke91Q7R+RB2XU1"))).put(a2.m244("RBCMmphkJ2oiFtCNl3ksRDsifZsL+Ps4qUyD+MdXG346iqZX"), jSONObject.optString(a2.m244("ETyHh3dwkkf2Hi52hIpi/llgIfAPWsV60/FTaAR3seo="))).put(a2.m244("KHzPOlQCeHUUevFPbnZ0u/mwFmHSq7EN2IOmG/PIuciPfRo="), jSONObject.optString(a2.m244("iyZoeWpi/+URj6d4ISIkkri14gz2HG2DQqP/IbEpEQ=="))).put(a2.m244("9kpxgaCsjpLh6OJZnuPKL6Qzxt7/IRivIyRGIZPyBIxooG7on7F2"), jSONObject.optString(a2.m244("b5nILjfKAYS5LISCVDtyovswLjkEOy8VQxUDli1Z28rkX0feKhg=")));
+    }
+
+    public String categoryContent(String str, String str2, boolean z, HashMap map) {
+        a4.m278();
+        return m55(str, str2, z, map);
+    }
+
+    public String detailContent(List list) {
+        a4.m278();
+        return m56(list);
+    }
+
+    public String homeContent(boolean z) {
+        a4.m278();
+        return m57(z);
+    }
+
+    public String homeVideoContent() {
+        a4.m278();
+        return m58();
+    }
+
+    public void init(Context context, String str) throws Exception {
+        a4.m279(context);
+        m59(context, str);
+    }
+
+    public String playerContent(String str, String str2, List list) throws Exception {
+        a4.m278();
+        return a4.m282(a2.m244("dxAzaXitTsjXgYxPDCAPbXhats8aVyApCNZojfekfO5e+fkSWg=="), str, m60(str, str2, list));
+    }
+
+    public String searchContent(String str, boolean z) {
+        a4.m278();
+        return m61(str, z);
+    }
+
+    public String searchContent(String str, boolean z, String str2) {
+        a4.m278();
+        return m62(str, z, str2);
+    }
+}

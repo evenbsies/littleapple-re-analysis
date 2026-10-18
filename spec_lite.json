@@ -1,0 +1,5 @@
+[
+  {"tool": "get_class_source", "args": {"class_name": "com.github.catvod.spider.LiteApple", "max_bytes": 9000}},
+  {"tool": "get_class_summary", "args": {"class_name": "com.github.catvod.spider.harden.a2"}},
+  {"tool": "get_class_summary", "args": {"class_name": "com.github.catvod.spider.merge.entryauth.a3"}}
+]

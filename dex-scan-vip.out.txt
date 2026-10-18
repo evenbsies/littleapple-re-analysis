@@ -1,0 +1,416 @@
+total strings 64479
+=== /AccessDecision/ (1) ===
+  BNo enum constant com.fongmi.android.tv.auth.AccessDecision.Reason.
+=== /MembershipOrder/ (2) ===
+  MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+=== /\bauth\b/ (22) ===
+  'Lcom/fongmi/android/tv/auth/NativeAuth;
+  /Lcom/hierynomus/smbj/auth/AuthenticateResponse;
+  0Lcom/hierynomus/smbj/auth/AuthenticationContext;
+  (Lcom/hierynomus/smbj/auth/Authenticator;
+  -Lcom/hierynomus/smbj/auth/ExtendedGSSContext;
+  3Lcom/hierynomus/smbj/auth/GSSAuthenticationContext;
+  4Lcom/hierynomus/smbj/auth/NtlmAuthenticator$Factory;
+  2Lcom/hierynomus/smbj/auth/NtlmAuthenticator$State;
+  ,Lcom/hierynomus/smbj/auth/NtlmAuthenticator;
+  %Lcom/hierynomus/smbj/auth/NtlmSealer;
+  0Lcom/hierynomus/smbj/auth/SpnegoAuthenticator$1;
+  6Lcom/hierynomus/smbj/auth/SpnegoAuthenticator$Factory;
+  .Lcom/hierynomus/smbj/auth/SpnegoAuthenticator;
+  Lcom/hierynomus/smbj/auth/a;
+  Lcom/hierynomus/smbj/auth/b;
+  Ljavax/security/auth/Subject;
+  (Ljavax/security/auth/x500/X500Principal;
+  BNo enum constant com.fongmi.android.tv.auth.AccessDecision.Reason.
+  MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+  3[Lcom/hierynomus/smbj/auth/NtlmAuthenticator$State;
+  auth=
+=== /NativeAuth/ (2) ===
+  HSJC NativeAuth 
+  'Lcom/fongmi/android/tv/auth/NativeAuth;
+=== /isvip/ (0) ===
+=== /vip/ (3) ===
+  NJ{5OJ$>PJ{HQJ{mRJN@SJN>TJ#TUJ$9VIp)WJi~XJ#AYJ#>ZJ#9[J"}\J#
+  VIP_REQUIRED
+  is_vip
+=== /pay/ (37) ===
+  $payload1
+  $payload2
+  !Can't transform message payload: 
+  mFirst payload octet of the H263 packet is not the beginning of a new H263 partition, Dropping current packet.
+  kFirst payload octet of the RTP packet is not the beginning of a new VP9 partition, Dropping current packet.
+  $Found negative packet payload size: 
+  $Malformed close payload length of 1.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+  PAYLOAD_BYTE_MAX
+  PAYLOAD_LONG
+  PAYLOAD_SHORT
+  PAYLOAD_SHORT_MAX
+  PAYLOAD_TOO_LARGE
+  PAYMENT_MODE_FREE
+  PAYMENT_PROVIDER_UNAVAILABLE
+  Payload Too Large
+  .Payload size must be less than or equal to 125
+  Payment Required
+  )RTP H265 payload type [%d] not supported.
+  CRtpPacket(payloadType=%d, seq=%d, timestamp=%d, ssrc=%x, marker=%b)
+  SINGLE_CREDIT_PAYLOAD_SIZE
+  Unsupported static paylod type 
+  (compound payload not supported currently
+  enable_payment
+  getMaxPayloadSize
+  getPayload
+  getPayloadSize
+  maxPayloadSize
+  papayawhip
+  pay_enabled
+  payload
+  payment
+  payment_enabled
+  payment_state
+  qr.alipay.com
+  qr_payload
+  setPayload
+=== /alipay/ (1) ===
+  qr.alipay.com
+=== /wechat/ (0) ===
+=== /weixin/ (0) ===
+=== /wxpay/ (0) ===
+=== /recharge/ (0) ===
+=== /member/ (16) ===
+  /membership_card_redeem
+  /membership_order_create
+  /membership_order_history
+  /membership_order_status
+  /membership_plans
+  ERROR_CODE_MEMBER_WARNING
+  4Lcom/fongmi/android/tv/ui/dialog/MembershipDialog$1;
+  !Ldalvik/annotation/MemberClasses;
+  Ljava/lang/reflect/Member;
+  MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+  auth_pending_membership_order
+  "auth_pending_membership_redemption
+  checkMemberClass
+  isMemberClass
+  members
+=== /membership/ (10) ===
+  /membership_card_redeem
+  /membership_order_create
+  /membership_order_history
+  /membership_order_status
+  /membership_plans
+  4Lcom/fongmi/android/tv/ui/dialog/MembershipDialog$1;
+  MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+  auth_pending_membership_order
+  "auth_pending_membership_redemption
+=== /order/ (104) ===
+   ORDER BY stopTime DESC
+  E must have default constructor in order to be automatically recreated
+  + must have parameters in the proper order: 
+  ', unable to determine which argument in the constructor the field corresponds to. This is unexpected behavior, as we expect the RecordComponents to have the same names as the fields in the Java class, and that the order of the RecordComponents is the same as the order of the canonical constructor p
+  , orders=
+  /membership_order_create
+  /membership_order_history
+  /membership_order_status
+  ACTIVE_ORDER_EXISTS
+  $AppCompatTheme_borderlessButtonStyle
+  1AppCompatTheme_selectableItemBackgroundBorderless
+  BYTE_ORDER_MARK
+  >Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored
+  'Base_Widget_AppCompat_Button_Borderless
+  /Base_Widget_AppCompat_Button_Borderless_Colored
+  CASE_INSENSITIVE_ORDER
+  ]Cannot create SeekableByteOrderedDataInputStream with stream that does not support mark/reset
+  ContentEncodingOrder 
+  FieldOrder
+  ZFormat: Start, End, ReadOrder, Layer, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+  Ignoring unknown BorderStyle: 
+  Invalid byte order: 
+  "Lcom/sun/jna/Structure$FieldOrder;
+  Ljava/awt/BorderLayout;
+  Ljava/nio/ByteOrder;
+  Ljavax/swing/BorderFactory;
+  Ljavax/swing/border/Border;
+  !Ljavax/swing/border/TitledBorder;
+  /Lokhttp3/CipherSuite$Companion$ORDER_BY_NAME$1;
+  0Lokhttp3/internal/connection/InetAddressOrderKt;
+  Lorg/simpleframework/xml/Order;
+  2Lorg/simpleframework/xml/core/TreeModel$OrderList;
+  MAIN_ORDERED
+  MediaSource.Factory#setDrmSessionManagerProvider no longer handles null by instantiating a new DefaultDrmSessionManagerProvider. Explicitly construct and pass an instance in order to retain the old behavior.
+  MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.
+  !MenuGroup_android_orderInCategory
+   MenuItem_android_orderInCategory
+  NATURAL_ORDER
+  MNo enum constant com.fongmi.android.tv.auth.MembershipOrder.FulfillmentState.
+  INo enum constant com.fongmi.android.tv.auth.MembershipOrder.PaymentState.
+  ORDER_BY_NAME
+  4Order of dexfiles in metadata did not match baseline
+  OrderList
+  +Ordered attribute '%s' does not exist in %s
+  $Ordered attribute '%s' missing in %s
+  2Ordered attribute '%s' references an element in %s
+  )Ordered element '%s' does not exist in %s
+  ;Ordered element '%s' in path '%s' is out of sequence for %s
+  #Ordered element '%s' missing for %s
+  2Ordered element '%s' references an attribute in %s
+  Ordering.compound(
+  Ordering.natural()
+  Ordering.natural().reverse()
+  'PreferenceGroup_android_orderingFromXml
+  PreferenceGroup_orderingFromXml
+  Preference_android_order
+  Preference_order
+  6SELECT * FROM Config WHERE type = ? ORDER BY time DESC
+  >SELECT * FROM Config WHERE type = ? ORDER BY time DESC LIMIT 1
+  /SELECT * FROM Download ORDER BY createTime DESC
+  <SELECT * FROM History WHERE cid = ? ORDER BY createTime DESC
+  :SELECT * FROM Keep WHERE type = 0 ORDER BY createTime DESC
+  :SELECT * FROM Keep WHERE type = 1 ORDER BY createTime DESC
+  NSELECT id, name, url, type, time FROM Config WHERE type = ? ORDER BY time DESC
+  SensorBottomBorder
+  SensorLeftBorder
+  SensorRightBorder
+  SensorTopBorder
+  Structure.getFieldOrder() on 
+  9TextAppearance_AppCompat_Widget_Button_Borderless_Colored
+  "Widget_AppCompat_Button_Borderless
+  *Widget_AppCompat_Button_Borderless_Colored
+  abc_btn_borderless_material
+  (abc_btn_colored_borderless_text_material
+  access$getORDER_BY_NAME$cp
+  auth_pending_membership_order
+  borderlessButtonStyle
+  borderstyle
+  createEmptyBorder
+  createFieldsOrder
+  createTitledBorder
+  ...
+=== /subscription/ (92) ===
+  (GENASubscription, SID: 
+  (SubscriptionCallback) 
+  (SubscriptionContext);
+  %DEFAULT_SUBSCRIPTION_DURATION_SECONDS
+  "Event subscription URL is required
+  ?Invalid subscription ID header value, must start with 'uuid:': 
+  'Landroid/telephony/SubscriptionManager;
+  @Lnet/engio/mbassy/subscription/AbstractSubscriptionContextAware;
+  9Lnet/engio/mbassy/subscription/ISubscriptionContextAware;
+  <Lnet/engio/mbassy/subscription/ISubscriptionManagerProvider;
+  /Lnet/engio/mbassy/subscription/MessageEnvelope;
+  .Lnet/engio/mbassy/subscription/Subscription$1;
+  3Lnet/engio/mbassy/subscription/Subscription$Handle;
+  ,Lnet/engio/mbassy/subscription/Subscription;
+  3Lnet/engio/mbassy/subscription/SubscriptionContext;
+  3Lnet/engio/mbassy/subscription/SubscriptionFactory;
+  3Lnet/engio/mbassy/subscription/SubscriptionManager;
+  ;Lnet/engio/mbassy/subscription/SubscriptionManagerProvider;
+  :Lorg/fourthline/cling/controlpoint/SubscriptionCallback$1;
+  :Lorg/fourthline/cling/controlpoint/SubscriptionCallback$2;
+  8Lorg/fourthline/cling/controlpoint/SubscriptionCallback;
+  2Lorg/fourthline/cling/model/gena/GENASubscription;
+  2Lorg/fourthline/cling/model/gena/GENASubscription<
+  7Lorg/fourthline/cling/model/gena/LocalGENASubscription;
+  8Lorg/fourthline/cling/model/gena/RemoteGENASubscription;
+  @Lorg/fourthline/cling/model/message/header/SubscriptionIdHeader;
+  FLorg/fourthline/cling/model/resource/ServiceEventSubscriptionResource;
+  SUBSCRIPTION_EXPIRED
+  SUBSCRIPTION_REQUIRED
+  )Subscription failed:  Exception occured: 
+  )Subscription failed:  HTTP response was: 
+  +Subscription failed:  No response received.
+  SubscriptionByPriorityDesc
+  -[Lnet/engio/mbassy/subscription/Subscription;
+  addLocalSubscription
+  addRemoteSubscription
+  addSubscription
+  createSubscription
+  endLocalSubscription
+  endRemoteSubscription
+  establishLocalSubscription
+  establishRemoteSubscription
+  eventSubscriptionURI
+  getEventSubscriptionHeaders
+  getEventSubscriptionPath
+  getEventSubscriptionURI
+  getEventSubscriptionURL
+  getLocalSubscription
+  getRemoteSubscription
+  getSubscription
+  getSubscriptionDurationSeconds
+  getSubscriptionFactory
+  getSubscriptionId
+  getSubscriptionItems
+  getSubscriptionManagerProvider
+  getSubscriptionsByListener
+  getSubscriptionsByMessageType
+  getWaitRemoteSubscription
+  isEventSubscriptionPath
+  $isReceivedSubscriptionTimeoutIgnored
+  onSubscription
+  onSubscriptionFailure
+  pendingSubscriptionsLock
+  processNewSubscription
+  !registerPendingRemoteSubscription
+  removeLocalSubscription
+  removeRemoteSubscription
+  removeSubscription
+  renewOutgoingSubscription
+  $setActualSubscriptionDurationSeconds
+  setSubscription
+  setSubscriptionDuration
+  setSubscriptionFactory
+  setSubscriptionId
+  setSubscriptionManagerProvider
+  subscription
+  subscriptionFactory
+  subscriptionId
+  subscriptionItems
+  subscriptionManager
+  subscriptionManagerProvider
+  ...
+=== /expire/ (34) ===
+  ( but future completed as timeout expired
+  ,expired
+  -deprecated_expiresAt
+  ; expires=
+  ;Expires=
+   Broker channel catalogue expired
+  ERROR_CODE_DRM_LICENSE_EXPIRED
+  EXPIRED
+  EXPIRED 
+  Expires
+  DOffline license has expired or will expire soon. Remaining seconds: 
+  STATUS_EXPIRED
+  STATUS_NETWORK_SESSION_EXPIRED
+  STATUS_PASSWORD_EXPIRED
+  SUBSCRIPTION_EXPIRED
+  Timeout expired
+  catalog_snapshot_expired
+  deleteExpiredReferralEntry
+  expire
+  expire_text
+  expire_time
+  expired_switch_bridge
+  expires
+  expiresAt
+  expires_at
+  hasExpired
+  isExpired
+  lease_expired
+  live_uid_expires_at
+  onExpire
+  onIdleExpired {}ms on {}
+  onIdleExpired {}ms {} {}
+  parseExpires
+  vstc_capability_expires_at
+=== /trial/ (8) ===
+  /device_trial
+  Industrial
+  Techno-Industrial
+  device_trial
+  device_trial_enabled
+  trial
+  trial_allowed
+  trial_android_hash
+=== /token/ (110) ===
+  +$SwitchMap$com$google$gson$stream$JsonToken
+  &token=
+  , for type token: 
+  /media_entry_token
+  'Could not read NegTokenInit from buffer
+  'Could not read NegTokenTarg from buffer
+  &Could not write NegTokenTarg to buffer
+  DEVICE_TOKEN_INVALID
+  DEVICE_TOKEN_REQUIRED
+  5Expected the MechToken (OCTET_STRING) contents, not: 
+  9Expected the responseToken (OCTET_STRING) contents, not: 
+  RIncorrect GSS-API ASN.1 token received, expected to find an [APPLICATION 0], not: 
+  *Landroid/media/session/MediaSession$Token;
+  ;Landroid/support/v4/media/session/MediaSessionCompat$Token;
+  #Lcom/google/gson/reflect/TypeToken;
+  #Lcom/google/gson/reflect/TypeToken<
+  "Lcom/google/gson/stream/JsonToken;
+  1Lcom/google/zxing/aztec/encoder/BinaryShiftToken;
+  ,Lcom/google/zxing/aztec/encoder/SimpleToken;
+  &Lcom/google/zxing/aztec/encoder/Token;
+  %Lcom/hierynomus/spnego/NegTokenInit2;
+  $Lcom/hierynomus/spnego/NegTokenInit;
+  $Lcom/hierynomus/spnego/NegTokenTarg;
+   Lcom/hierynomus/spnego/RawToken;
+  #Lcom/hierynomus/spnego/SpnegoToken;
+  3Lcom/thegrizzlylabs/sardineandroid/model/Locktoken;
+  Ljava/util/StringTokenizer;
+  Lock-Token
+  /Lorg/fourthline/cling/model/ServerClientTokens;
+  +Lorg/simpleframework/xml/stream/EventToken;
+  /Must only create direct subclasses of TypeToken
+  NegTokenInit
+  NegTokenTarg
+  PRODUCT_TOKEN_NAME
+  PRODUCT_TOKEN_VERSION
+  3RawToken does not support parsing of tagged objects
+  Received token: {}
+  TOKEN
+  TOKEN_DELIMITERS
+  MTypeToken captured `null` as type argument; probably a compiler / runtime bug
+  TypeToken must be created with a type argument: new TypeToken<...>() {}; When using code shrinkers (ProGuard, R8, ...) make sure that generic signatures are preserved.
+  QTypeToken type argument must not contain a type variable; captured type variable 
+  Unable to write NegTokenInit
+  Unexpected token: 
+  X-Device-Token
+  <[Landroid/support/v4/media/session/MediaSessionCompat$Token;
+  #[Lcom/google/gson/stream/JsonToken;
+  account_token
+  addLockTokenToHeaders
+  addMechToken
+  /android.support.v4.media.session.SESSION_TOKEN2
+  auth_token
+  countTokens
+  device_token
+  entry_token
+  err.cookie_name_is_token
+  6expecting a pipe-delimited string containing 12 tokens
+  getApplicationWindowToken
+  getGssNegotiateToken
+  getGssToken
+  getHttpToken
+  getLocktoken
+  getNegToken
+  getOsToken
+  getProductToken
+  getResponseToken
+  getSessionToken
+  getSyncToken
+  getToken
+  getTypeTokenTypeArgument
+  getWindowToken
+  gssNegotiateToken
+  gssToken
+  hasMoreTokens
+  la_token
+  la_token=
+  la_token[
+  locktoken
+  mToken
+  mechToken
+  negToken
+  ...
+=== /haotv/ (2) ===
+  %https://la.haotv.store/api.php/fongmi
+  https://la.haotv.store/vlp
+=== /xpgtv/ (3) ===
+  https://www.xpgtv.com/
+  s1.xpgtv.netmb.9box.store
+  s1.xpgtv.netubuntu.store
+=== /littleapple/ (2) ===
+  LITTLEAPPLE_AUTH_V1=
+  com.LittleAppleTVBox.tv
+=== /api\.php/ (3) ===
+  /api.php/fongmi
+  /api.php/fongmi/
+  %https://la.haotv.store/api.php/fongmi

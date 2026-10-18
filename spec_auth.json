@@ -1,0 +1,6 @@
+[
+  {"tool": "get_class_source", "args": {"class_name": "com.fongmi.android.tv.auth.NativeAuth"}},
+  {"tool": "get_xrefs_to_class", "args": {"class_name": "com.fongmi.android.tv.auth.NativeAuth"}},
+  {"tool": "search_classes_by_keyword", "args": {"search_term": "haotv", "search_in": "code,class,method,field", "count": 40}},
+  {"tool": "search_classes_by_keyword", "args": {"search_term": "NativeAuth", "search_in": "method,field,code", "count": 40}}
+]
